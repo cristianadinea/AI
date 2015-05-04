@@ -1,0 +1,3 @@
+keytool -genkey -keyalg rsa -alias yourkey
+keytool -export -alias yourkey -file yourcert.crt
+jarsigner Aplicatie.jar yourkey

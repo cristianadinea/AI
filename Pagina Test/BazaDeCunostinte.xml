@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<baza_de_cunostinte>
+
+	<reguli_auxiliare>
+	
+		<inclinatie nume="tehnica">
+			<atribut nume="Esti interesat de matematica" valoare="da"/>
+		</inclinatie>
+		
+		<inclinatie nume="tehnica">
+			<atribut nume="Esti interesat de fizica" valoare="da"/>
+		</inclinatie>
+		
+		<inclinatie nume="tehnica">
+			<atribut nume="Esti interesat de chimie" valoare="da"/>
+		</inclinatie>
+		
+		<inclinatie nume="tehnica">
+			<atribut nume="Esti interesat de biologie" valoare="da"/>
+		</inclinatie>
+		
+		<inclinatie nume="umana">
+			<atribut nume="Esti interesat de romana" valoare="da"/>
+		</inclinatie>
+		
+		<inclinatie nume="umana">
+			<atribut nume="Esti interesat de limbi straine" valoare="da"/>
+		</inclinatie>
+		
+		<inclinatie nume="umana">
+			<atribut nume="Iti place sa citesti" valoare="da"/>
+		</inclinatie>
+		
+		<inclinatie nume="umana">
+			<atribut nume="Esti interesat de biologie" valoare="da"/>
+		</inclinatie>
+		
+		<inclinatie nume="umana">
+			<atribut nume="Esti interesat de economie" valoare="da"/>
+		</inclinatie>
+		
+		<inclinatie nume="umana">
+			<atribut nume="Esti interesat de psihologie" valoare="da"/>
+		</inclinatie>
+		
+		<inclinatie nume="umana">
+			<atribut nume="Esti talentat din punct de vedere artistic" valoare="da"/>
+		</inclinatie>
+		
+		<inclinatie nume="umana">
+			<atribut nume="Esti interesat de istorie" valoare="da"/>
+		</inclinatie>
+		
+		<inclinatie nume="umana">
+			<atribut nume="Esti interesat de geografie" valoare="da"/>
+		</inclinatie>
+		
+		<inclinatie nume="militara">
+			<atribut nume="Esti sportiv" valoare="da"/>
+			<atribut nume="Esti dispus sa-ti asumi riscuri" valoare="da"/>
+			<atribut nume="Esti disciplinat" valoare="da"/>			
+		</inclinatie>
+		
+		<inclinatie nume="militara">
+			<atribut nume="Esti ordonat" valoare="da"/>
+			<atribut nume="Esti dispus sa te supui autoritatii" valoare="da"/>		
+		</inclinatie>
+		
+		
+		<inclinatie nume="naturala">
+			<atribut nume="Iti place sa lucrezi cu oamenii" valoare="da"/>
+			<atribut nume="Esti sportiv" valoare="da"/>		
+		</inclinatie>
+		
+		<inclinatie nume="naturala">
+			<atribut nume="Iti place sa ajuti oamenii" valoare="da"/>
+			<atribut nume="Ai memorie buna" valoare="da"/>		
+		</inclinatie>
+		
+	</reguli_auxiliare>
+
+	<reguli_principale>
+	
+		<profil nume="tehnic">
+			<inclinatie nume="tehnica"/>
+		</profil>
+		
+		<profil nume="uman">
+			<inclinatie nume="umana"/>
+		</profil>
+		
+		<profil nume="stiinte militare">
+			<inclinatie nume="militara"/>
+		</profil>
+		
+		<profil nume="stiinte naturale">
+			<inclinatie nume="naturala"/>
+		</profil>
+		
+		<domeniu nume="aplicativ tehnic"> 
+			<profil nume="tehnic"/>
+			<atribut nume="Esti interesat de solutii" valoare="practice"/>
+		</domeniu>
+		
+		<domeniu nume="teoretic tehnic"> 
+			<profil nume="tehnic"/>
+			<atribut nume="Esti interesat de solutii" valoare="teoretice"/>
+		</domeniu>
+		
+	   <domeniu nume="teoretic uman"> 
+			<profil nume="uman"/>
+			<atribut nume="Esti interesat de" valoare="teorie"/>
+		</domeniu>
+		
+		<domeniu nume="aplicativ uman"> 
+			<profil nume="uman"/>
+			<atribut nume="Esti interesat de" valoare="aplicarea cunostintelor"/>
+		</domeniu>
+		
+		<domeniu nume="artistic"> 
+			<profil nume="uman"/>
+			<atribut nume="Esti interesat de" valoare="arta"/>
+			<atribut nume="Esti talentat din punct de vedere artistic" valoare="da"/>
+		</domeniu>
+		
+		<domeniu nume="politie"> 
+			<profil nume="stiinte militare"/>
+			<atribut nume="Te intereseaza o cariera in" valoare="politie"/>
+		</domeniu>
+		
+		<domeniu nume="militar"> 
+			<profil nume="stiinte militare"/>
+			<atribut nume="Te intereseaza o cariera in" valoare="armata"/>
+		</domeniu>
+		
+		<domeniu nume="sportiv"> 
+			<profil nume="stiinte naturale"/>
+			<atribut nume="Esti sportiv" valoare="da"/>
+		</domeniu>
+		
+		<domeniu nume="medical"> 
+			<profil nume="stiinte naturale"/>
+		    <atribut nume="Ai memorie buna" valoare="da"/>
+		    <atribut nume="Simti repulsie fata de sange" valoare="nu"/>		
+		</domeniu>
+
+		<facultate nume="Automatica si Calculatoare">
+			<domeniu nume="aplicativ tehnic"/>
+			<atribut nume="Esti interesat de matematica" valoare="da"/>
+			<atribut nume="Esti pasionat de software" valoare="da"/> 
+		</facultate>
+		
+		<facultate nume="Automatica si Calculatoare">
+			<domeniu nume="aplicativ tehnic"/>
+			<atribut nume="Esti interesat de matematica" valoare="da"/>
+			<atribut nume="Esti pasionat de hardware" valoare="da"/>
+		</facultate>
+		
+		<facultate nume="Arhitectura">
+			<domeniu nume="aplicativ tehnic"/>
+			<atribut nume="Esti interesat de geometrie" valoare="da"/>
+			<atribut nume="Esti pasionat de desen tehnic" valoare="da"/>
+			<atribut nume="Ai simt artistic" valoare="da"/>
+		</facultate>
+		
+		<facultate nume="Electrica si Electroenergetica">
+			<domeniu nume="aplicativ tehnic"/>
+			<atribut nume="Esti interesat de matematica" valoare="da"/>
+			<atribut nume="Esti interesat de fizica" valoare="da"/>
+			<atribut nume="Esti interesat sa lucrezi cu motoare" valoare="da"/>
+		</facultate>
+		
+		<facultate nume="Constructii">
+			<domeniu nume="aplicativ tehnic"/>
+			<atribut nume="Esti interesat de matematica" valoare="da"/>
+			<atribut nume="Esti interesat de fizica" valoare="da"/>
+			<atribut nume="Esti pasionat de desen tehnic" valoare="da"/>
+			<atribut nume="Ti-a placut sa te joci cu LEGO" valoare="da"/>
+			<atribut nume="Iti place munca de" valoare="teren"/>
+		</facultate>
+		
+		<facultate nume="Electronica si Telecomunicatii">
+			<domeniu nume="aplicativ tehnic"/>
+			<atribut nume="Esti interesat de matematica" valoare="da"/>
+			<atribut nume="Esti interesat de fizica" valoare="da"/>
+			<atribut nume="Ai cunostinte despre" valoare="circuite"/>
+		</facultate>
+		
+		<facultate nume="Electronica si Telecomunicatii">
+			<domeniu nume="aplicativ tehnic"/>
+			<atribut nume="Esti interesat de matematica" valoare="da"/>
+			<atribut nume="Esti interesat de fizica" valoare="da"/>
+			<atribut nume="Ai cunostinte despre" valoare="multimedia"/>
+		</facultate>
+		
+		<facultate nume="Stiinte Agricole">
+			<domeniu nume="aplicativ tehnic"/>
+			<atribut nume="Esti interesat de biologie" valoare="da"/>
+			<atribut nume="Iti place munca de" valoare="teren"/>
+			<atribut nume="Ai rude apropiate la sat" valoare="da"/>
+		</facultate>
+	
+		<facultate nume="Mecanica">
+			<domeniu nume="aplicativ tehnic"/>
+			<atribut nume="Esti interesat de matematica" valoare="da"/>
+			<atribut nume="Esti interesat de fizica" valoare="da"/>
+		</facultate>
+		
+		<facultate nume="Chimie">
+			<domeniu nume="teoretic tehnic"/> 
+			<atribut nume="Esti interesat de chimie" valoare="da"/>
+			<atribut nume="Ti-ar placea sa lucrezi in laborator" valoare="da"/>
+		</facultate>
+		
+		<facultate nume="Fizica">
+			<domeniu nume="teoretic tehnic"/> 
+			<atribut nume="Esti interesat de fizica" valoare="da"/>
+		</facultate>
+		
+		<facultate nume="Matematica">
+			<domeniu nume="teoretic tehnic"/> 
+			<atribut nume="Esti interesat de matematica" valoare="da"/>
+		</facultate>
+		
+		<facultate nume="Economie">
+			<domeniu nume="aplicativ uman"/> 
+			<atribut nume="Esti interesat de matematica" valoare="da"/>
+			<atribut nume="Esti interesat de economie" valoare="da"/>
+			<atribut nume="Esti un bun organizator" valoare="da"/>
+		</facultate>
+		
+		<facultate nume="Drept">
+		    <domeniu nume="aplicativ uman"/> 
+		    <atribut nume="Ai memorie buna" valoare="da"/>
+			<atribut nume="Esti un bun orator" valoare="da"/>
+			<atribut nume="Ai simt etic" valoare="da"/>
+		</facultate>
+		
+		<facultate nume="Psihologie">
+		    <domeniu nume="aplicativ uman"/> 
+		    <atribut nume="Esti interesat de psihologie" valoare="da"/>
+	        <atribut nume="Iti place sa ajuti oamenii" valoare="da"/>
+		</facultate>
+		
+		<facultate nume="Jurnalism">
+		    <domeniu nume="aplicativ uman"/> 
+		    <atribut nume="Esti interesat de limbi straine" valoare="da"/>
+	        <atribut nume="Esti un bun orator" valoare="da"/>
+	        <atribut nume="Esti un om spontan" valoare="da"/>
+		</facultate>
+		
+		<facultate nume="Management">
+		    <domeniu nume="aplicativ uman"/> 
+		    <atribut nume="Iti place sa lucrezi cu oamenii" valoare="da"/>
+	        <atribut nume="Esti o persoana autoritara" valoare="da"/>
+	        <atribut nume="Esti un bun organizator" valoare="da"/>
+		</facultate>
+		
+		<facultate nume="Teologie">
+		     <domeniu nume="teoretic uman"/> 
+		     <atribut nume="Iti place sa citesti" valoare="da"/>
+	         <atribut nume="Esti un om religios" valoare="da"/>
+	         <atribut nume="Esti interesat de istorie" valoare="da"/>
+		</facultate>
+		
+		<facultate nume="Filozofie">
+		     <domeniu nume="teoretic uman"/> 
+		     <atribut nume="Iti place sa citesti" valoare="da"/>
+	         <atribut nume="Esti interesat de filozofie" valoare="da"/>
+	         <atribut nume="Esti un bun orator" valoare="da"/>
+		</facultate>
+		
+		<facultate nume="Politica">
+		     <domeniu nume="teoretic uman"/> 
+		     <atribut nume="Esti un bun orator" valoare="da"/>
+	         <atribut nume="Esti o persoana autoritara" valoare="da"/>
+	         <atribut nume="Ai simt etic" valoare="da"/>
+	         <atribut nume="Esti interesat de limbi straine" valoare="da"/>
+		</facultate>
+		
+		<facultate nume="Geografie">
+		     <domeniu nume="teoretic uman"/> 
+		     <atribut nume="Iti place geografia" valoare="da"/>
+		     <atribut nume="Iti place sa calatoresti" valoare="da"/>
+		</facultate>
+		
+		<facultate nume="Istorie">
+		     <domeniu nume="teoretic uman"/> 
+		     <atribut nume="Iti place istoria" valoare="da"/>
+		     <atribut nume="Ai memorie buna" valoare="da"/>
+		</facultate>
+		
+	    <facultate nume="Biologie">
+		     <domeniu nume="teoretic uman"/> 
+		     <atribut nume="Iti place biologia" valoare="da"/>
+		</facultate>
+		
+	    <facultate nume="Limbi">
+		     <domeniu nume="teoretic uman"/> 
+		     <atribut nume="Esti interesat de limbi straine" valoare="da"/>
+		     <atribut nume="Iti place sa citesti" valoare="da"/>
+		</facultate>	
+		
+		<facultate nume="Conservator">
+		     <domeniu nume="artistic uman"/>
+		     <atribut nume="Canti la vreun instrument" valoare="da"/>
+		     <atribut nume="Ai ureche muzicala" valoare="da"/>
+		</facultate>      
+		
+		<facultate nume="Arte Plastice">
+		     <domeniu nume="artistic uman"/>
+		     <atribut nume="Esti pasionat de desen" valoare="artistic"/>
+		 </facultate>
+		 
+		 <facultate nume="Arte Plastice">
+		     <domeniu nume="artistic uman"/>
+		     <atribut nume="Esti pasionat de arte decorative" valoare="da"/>
+		 </facultate>
+		       
+		<facultate nume="Design">
+		     <domeniu nume="artistic uman"/>
+		     <atribut nume="Esti pasionat de design" valoare="da"/>
+		</facultate>
+		
+		<facultate nume="Academia Militara">
+		     <domeniu nume="militar"/>
+		     <atribut nume="Esti sportiv" valoare="da"/>
+		     <atribut nume="Esti dispus sa-ti asumi riscuri" valoare="da"/>
+		 </facultate>
+		 
+		 <facultate nume="Academia de Politie">
+		     <domeniu nume="politie"/>
+		     <atribut nume="Esti sportiv" valoare="da"/>
+		     <atribut nume="Esti dispus sa-ti asumi riscuri" valoare="da"/>
+		 </facultate>
+		 
+		 <facultate nume="Educatie fizica si sport">
+		     <domeniu nume="sportiv"/>
+		     <atribut nume="Esti interesat de o perioada de studiu" valoare="scurta"/>
+		     <atribut nume="Iti place munca de" valoare="teren"/>
+		 </facultate>
+		 
+		 <facultate nume="Fiziokinetoterapie">
+		     <domeniu nume="sportiv"/>
+		     <atribut nume="Esti interesat de o perioada de studiu" valoare="medie"/>
+		     <atribut nume="Iti place munca de" valoare="birou"/>
+		 </facultate>
+		 
+		 <facultate nume="Medicina Generala">
+		     <domeniu nume="medical"/>
+		     <atribut nume="Esti interesat de o perioada de studiu" valoare="lunga"/>
+		     <atribut nume="Ti-a placut anatomia la liceu" valoare="da"/>
+		     <atribut nume="Esti o persoana responsabila" valoare="da"/>
+		</facultate>
+		
+		<facultate nume="Medicina dentara">
+		     <domeniu nume="medical"/>
+		     <atribut nume="Esti interesat de o perioada de studiu" valoare="medie"/>
+		     <atribut nume="Ti-a placut anatomia la liceu" valoare="da"/>
+		     <atribut nume="Ai fost pasionat de lucru manual" valoare="da"/>
+		 </facultate>
+		 
+		 <facultate nume="Farmacie">
+		     <domeniu nume="medical"/>
+		     <atribut nume="Esti interesat de o perioada de studiu" valoare="medie"/>
+		     <atribut nume="Esti interesat de chimie" valoare="da"/>
+		     <atribut nume="Esti interesat de biologie" valoare="da"/>
+		 </facultate>
+		 
+		<facultate nume="Medicina Veterinara">
+		     <domeniu nume="medical"/>
+		     <atribut nume="Esti interesat de o perioada de studiu" valoare="lunga"/>
+		     <atribut nume="Iti place munca de" valoare="teren"/>
+		     <atribut nume="Ti-ar placea sa ingrijesti animale" valoare="da"/>
+		 </facultate>
+		 
+	</reguli_principale> 
+	
+</baza_de_cunostinte>
